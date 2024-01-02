@@ -23,9 +23,9 @@ int main(int argc, char **argv) {
         int finalNum = 0;
         
         for (int i = 0; i < strlen(buffer); i++) {
-            char current = buffer[i];
+            const char current = buffer[i];
             
-            int x = current - '0';
+            const int x = current - '0';
 
             // check if x is properly bounded
             if (x >= 0 && x <= 9) {
